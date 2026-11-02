@@ -6,15 +6,30 @@
 
 int main()
 {
-    int choix = -1, nombre;
+    int choix = -1, nombre, testuser;
 
     while (choix != 0)
     {
-        printf("\n1 - Dire bonjour\n");
-        printf("2 - Calculer le carre d'un nombre\n");
-        printf("0 - Quitter\n");
-        printf("Votre choix : ");
-        scanf("%d", &choix);
+        // while(scanf("%d", &choix) != 1){
+        //     printf("Erreur: entrez un entier");
+
+        //     while (getchar() != "\n");
+
+        //     printf("Votre choix :");
+        // };
+
+        do {
+            printf("\n1 - Dire bonjour\n");
+            printf("2 - Calculer le carre d'un nombre\n");
+            printf("0 - Quitter\n");
+            printf("Votre choix : ");
+
+            testuser = scanf("%d", &choix);
+
+            if (testuser != 1) {
+                printf("Erreur: entrez un entier");
+            }
+        } while (testuser != 1);
 
         if (choix == 1)
             printf("Bonjour !\n");
