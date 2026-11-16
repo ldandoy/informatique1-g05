@@ -1,0 +1,1 @@
+void dire_bonjour(int nb);

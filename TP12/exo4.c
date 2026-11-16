@@ -6,3 +6,55 @@ Exercice 4 : trier trois nombres
 Avec a = 7, b = 2, c = 5, on doit obtenir a = 2, b = 5, c = 7.
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void trier3(int *a, int *b, int *c)
+{
+    if (*a > *b)
+        echanger(a, b);
+    if (*b > *c)
+        echanger(b, c);
+    if (*a > *b)
+        echanger(a, b);
+}
+
+// appel dans le main :
+trier3(&a, &b, &c);

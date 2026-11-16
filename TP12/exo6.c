@@ -24,3 +24,36 @@ int main()
 }
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Réponse : u = 50, v = 51, *p = 51, *q = 50
+
+Ligne	        Effet	                        u	v	p pointe sur	q pointe sur
+départ		                                    3	8	u	        v
+*p = *p + 2	    u devient 5	                    5	8	u	        v
+q = p	        q pointe maintenant sur u	    5	8	u	        u
+*q = *q * 10	u devient 50	                50	8	u	        u
+p = &v	        p pointe maintenant sur v	    50	8	v	        u
+*p = *q + 1	    v devient 50 + 1	            50	51	v	        u
